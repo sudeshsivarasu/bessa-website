@@ -177,13 +177,15 @@ pre.summary { background: #fff; border: 1px solid var(--rule); border-radius: 10
   .grid.three, .grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .site-footer .wrap { grid-template-columns: 1fr 1fr; }
 }
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   .nav { display: none; position: absolute; left: 0; right: 0; top: 72px; background: var(--charcoal); flex-direction: column; align-items: stretch; padding: 10px var(--gutter) 16px; gap: 2px; border-bottom: 1px solid #2c2f2c; }
   .nav.open { display: flex; }
   .nav a { padding: 12px 10px; font-size: 16px; }
   .nav a[aria-current="page"] { box-shadow: inset 4px 0 0 var(--green); border-radius: 0 6px 6px 0; }
   .nav .btn { margin: 10px 0 0; text-align: center; }
   .menu-btn { display: inline-block; }
+}
+@media (max-width: 760px) {
   .brand span { font-size: 16px; }
   .grid.two, .grid.three, .grid.four { grid-template-columns: 1fr; }
   .site-footer .wrap { grid-template-columns: 1fr; }
