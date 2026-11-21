@@ -1,0 +1,239 @@
+<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">Membership application</p>
+  <h1>Apply for BESSA membership</h1>
+  <p class="lead">One form for all individual and organisational categories. Takes about eight minutes. On submission you receive a reference number and the application is sent to the Membership Secretary for review at the next Council meeting.</p>
+</div></section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid two" style="margin-bottom:28px">
+      <div class="card"><h4>Who can apply</h4><p>Anyone who works, studies or has a professional interest in biomedical, clinical or medical engineering in South Africa, and organisations active in health technology. Fellows and Honorary Members are elected by nomination, not by application.</p></div>
+      <div class="card"><h4>What you need</h4><p>Your highest qualification, years of relevant experience, and (students) your current programme. Proof is requested only if Council asks for it. Fees are invoiced after approval; nothing is payable now.</p></div>
+    </div>
+
+    <form id="app" novalidate>
+      <h2><span class="num">01</span> Membership category</h2>
+      <p style="color:var(--muted)">Choose the category you believe fits. The Membership Secretary confirms the category against the Membership Rules and may offer a different one.</p>
+      <div class="cats" role="radiogroup" aria-label="Membership category">
+        <label class="cat"><input type="radio" name="cat" value="Member" id="cat-member"><span><b>Member <span class="pn">MBESSA</span></b><small>Relevant degree plus two or more years in biomedical engineering, or five years' experience without a degree. Votes and may hold office.</small></span></label>
+        <label class="cat"><input type="radio" name="cat" value="Early Career" id="cat-ec"><span><b>Early Career <span class="pn">ECBESSA</span></b><small>Within five years of your highest qualification. Votes; reduced fee; moves to Member automatically.</small></span></label>
+        <label class="cat"><input type="radio" name="cat" value="Associate" id="cat-assoc"><span><b>Associate <span class="pn">AMBESSA</span></b><small>Clinicians, scientists, regulators, managers and others who work with health technology but do not meet the Member criteria. Non-voting.</small></span></label>
+        <label class="cat"><input type="radio" name="cat" value="Student" id="cat-student"><span><b>Student <span class="pn">SBESSA</span></b><small>Registered at a recognised institution in a relevant programme. Non-voting; may serve on committees.</small></span></label>
+        <label class="cat"><input type="radio" name="cat" value="Affiliate (Organisational)" id="cat-aff"><span><b>Affiliate <span class="pn">Organisational</span></b><small>Companies, hospitals, departments, NGOs and agencies. Names one representative; tiered fee.</small></span></label>
+        <label class="cat"><input type="radio" name="cat" value="Not sure (please assign)" id="cat-unsure"><span><b>Not sure</b><small>Complete the form and the Membership Secretary will propose the right category.</small></span></label>
+      </div>
+
+      <h2 style="margin-top:36px"><span class="num">02</span> About you</h2>
+      <div class="form-grid">
+        <div class="field"><label class="lbl" for="title">Title</label><select id="title" name="title"><option value="">Select</option><option>Prof</option><option>Dr</option><option>Mr</option><option>Ms</option><option>Mrs</option><option>Mx</option><option>Eng</option></select></div>
+        <div class="field"><label class="lbl" for="first">First name(s) <span class="req">*</span></label><input type="text" id="first" name="first" autocomplete="given-name" required></div>
+        <div class="field"><label class="lbl" for="last">Surname <span class="req">*</span></label><input type="text" id="last" name="last" autocomplete="family-name" required></div>
+        <div class="field"><label class="lbl" for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" autocomplete="email" required></div>
+        <div class="field"><label class="lbl" for="phone">Mobile</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+27"></div>
+        <div class="field"><label class="lbl" for="country">Country <span class="req">*</span></label><input type="text" id="country" name="country" value="South Africa" required></div>
+        <div class="field"><label class="lbl" for="province">Province</label><select id="province" name="province"><option value="">Select</option><option>Western Cape</option><option>Gauteng</option><option>KwaZulu-Natal</option><option>Eastern Cape</option><option>Free State</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Northern Cape</option><option>Outside South Africa</option></select></div>
+        <div class="field"><label class="lbl" for="city">City or town</label><input type="text" id="city" name="city" autocomplete="address-level2"></div>
+        <div class="field"><label class="lbl" for="sector">Sector <span class="req">*</span></label><select id="sector" name="sector" required><option value="">Select</option><option>University or research institution</option><option>Public health service</option><option>Private healthcare</option><option>Industry: manufacturer or developer</option><option>Industry: distributor or service provider</option><option>Regulator or government</option><option>NGO or development agency</option><option>Student</option><option>Self-employed or consultant</option><option>Other</option></select></div>
+        <div class="field"><label class="lbl" for="org">Organisation or institution <span class="req">*</span></label><input type="text" id="org" name="org" autocomplete="organization" required></div>
+        <div class="field"><label class="lbl" for="dept">Department or unit</label><input type="text" id="dept" name="dept"></div>
+        <div class="field"><label class="lbl" for="role">Position or job title</label><input type="text" id="role" name="role" autocomplete="organization-title"></div>
+      </div>
+
+      <h2 style="margin-top:36px"><span class="num">03</span> Qualifications and experience</h2>
+      <div class="form-grid">
+        <div class="field"><label class="lbl" for="qual">Highest qualification <span class="req">*</span></label><select id="qual" name="qual" required><option value="">Select</option><option>Doctorate (PhD, DEng, MD)</option><option>Master's (MSc, MEng, MMed, MPhil)</option><option>Honours or postgraduate diploma</option><option>Bachelor's (BSc, BEng, BTech)</option><option>Diploma (NDip, Advanced Diploma)</option><option>Other or none</option></select></div>
+        <div class="field"><label class="lbl" for="qualfield">Field of qualification <span class="req">*</span></label><input type="text" id="qualfield" name="qualfield" placeholder="e.g. Biomedical Engineering" required></div>
+        <div class="field"><label class="lbl" for="qualinst">Awarding institution</label><input type="text" id="qualinst" name="qualinst"></div>
+        <div class="field"><label class="lbl" for="qualyear">Year completed</label><input type="number" id="qualyear" name="qualyear" min="1950" max="2030" inputmode="numeric"></div>
+        <div class="field"><label class="lbl" for="years">Years of relevant professional experience <span class="req">*</span></label><input type="number" id="years" name="years" min="0" max="60" inputmode="numeric" required></div>
+        <div class="field"><label class="lbl" for="ecsa">ECSA registration</label><select id="ecsa" name="ecsa"><option value="">None</option><option>Candidate</option><option>Pr Eng</option><option>Pr Tech Eng</option><option>Pr Techni Eng</option><option>Other professional registration</option></select></div>
+      </div>
+      <div class="form-grid only" id="student-only" style="margin-top:16px">
+        <div class="field"><label class="lbl" for="prog">Current programme</label><input type="text" id="prog" name="prog" placeholder="e.g. MSc (Med) Biomedical Engineering"></div>
+        <div class="field"><label class="lbl" for="proginst">Institution</label><input type="text" id="proginst" name="proginst"></div>
+        <div class="field"><label class="lbl" for="progyear">Expected completion year</label><input type="number" id="progyear" name="progyear" min="2026" max="2036" inputmode="numeric"></div>
+        <div class="field"><label class="lbl" for="studno">Student number</label><input type="text" id="studno" name="studno"></div>
+      </div>
+      <div class="form-grid only" id="aff-only" style="margin-top:16px">
+        <div class="field"><label class="lbl" for="afftier">Organisation size</label><select id="afftier" name="afftier"><option value="">Select</option><option>Small (up to 20 staff, start-up, NGO or academic department)</option><option>Medium (21 to 200 staff)</option><option>Large (over 200 staff or multinational)</option></select></div>
+        <div class="field"><label class="lbl" for="affrep">Nominated representative (name and role)</label><input type="text" id="affrep" name="affrep"></div>
+      </div>
+      <div class="field" style="margin-top:20px"><span class="lbl">Areas of interest</span>
+        <div class="checks">
+          <label class="chk"><input type="checkbox" name="interest" value="Medical devices and frugal biodesign" id="i1">Medical devices and frugal biodesign</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Clinical engineering and health technology management" id="i2">Clinical engineering and health technology management</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Digital health, AI and health informatics" id="i3">Digital health, AI and health informatics</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Biomechanics, rehabilitation and assistive technology" id="i4">Biomechanics, rehabilitation and assistive technology</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Biomaterials, implants and tissue engineering" id="i5">Biomaterials, implants and tissue engineering</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Diagnostics, imaging and instrumentation" id="i6">Diagnostics, imaging and instrumentation</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Regulatory affairs and quality (SAHPRA, ISO 13485)" id="i7">Regulatory affairs and quality (SAHPRA, ISO 13485)</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Health technology assessment and policy" id="i8">Health technology assessment and policy</label>
+          <label class="chk"><input type="checkbox" name="interest" value="BME education and accreditation" id="i9">BME education and accreditation</label>
+          <label class="chk"><input type="checkbox" name="interest" value="Entrepreneurship and local manufacturing" id="i10">Entrepreneurship and local manufacturing</label>
+        </div>
+      </div>
+      <div class="field" style="margin-top:20px"><span class="lbl">Would you like to be involved beyond membership?</span>
+        <div class="checks">
+          <label class="chk"><input type="checkbox" name="vol" value="Serve on a committee or working group" id="v1">Serve on a committee or working group</label>
+          <label class="chk"><input type="checkbox" name="vol" value="Review SABEC abstracts" id="v2">Review SABEC abstracts</label>
+          <label class="chk"><input type="checkbox" name="vol" value="Mentor students and early-career members" id="v3">Mentor students and early-career members</label>
+          <label class="chk"><input type="checkbox" name="vol" value="Act as a regional contact" id="v4">Act as a regional contact</label>
+        </div>
+      </div>
+
+      <h2 style="margin-top:36px"><span class="num">04</span> How you found BESSA</h2>
+      <div class="form-grid">
+        <div class="field"><label class="lbl" for="source">How did you hear about BESSA?</label><select id="source" name="source"><option value="">Select</option><option>Invited by a BESSA member</option><option>SABEC conference</option><option>IFMBE</option><option>University or lecturer</option><option>LinkedIn or social media</option><option>Africa Health Exhibition</option><option>Employer</option><option>Other</option></select></div>
+        <div class="field"><label class="lbl" for="referrer">Invited or referred by (name)</label><input type="text" id="referrer" name="referrer"></div>
+        <div class="field full"><label class="lbl" for="motivation">Anything you would like Council to know (optional)</label><textarea id="motivation" name="motivation" placeholder="Why you are joining, what you hope BESSA will do, or relevant professional background."></textarea></div>
+      </div>
+
+      <h2 style="margin-top:36px"><span class="num">05</span> Declarations</h2>
+      <div class="card" style="display:grid;gap:12px">
+        <label class="chk"><input type="checkbox" id="d-conduct" required>I will abide by the BESSA Constitution and Code of Professional Conduct, and I confirm that the information given is true and complete.</label>
+        <label class="chk"><input type="checkbox" id="d-popia" required>I consent to BESSA processing my personal information for membership administration, communication and statutory reporting, including aggregate (non-identifying) membership numbers reported to the IFMBE, in terms of the Protection of Personal Information Act 4 of 2013. I may withdraw consent by writing to BESSA@uct.ac.za.</label>
+        <label class="chk"><input type="checkbox" id="d-fees" required>I understand that membership takes effect on Council approval and payment of the applicable annual fee.</label>
+        <label class="chk"><input type="checkbox" id="d-news">Send me the BESSA newsletter, event notices and IFMBE opportunities.</label>
+      </div>
+
+      <div class="err" id="formerr" hidden style="margin-top:18px"></div>
+      <div class="btn-row">
+        <button type="submit" class="btn" id="submitbtn">Review and submit application</button>
+        <button type="button" class="btn ghost" id="clearbtn">Clear form</button>
+      </div>
+    </form>
+
+    <section id="review" hidden aria-live="polite" style="display:grid;gap:18px">
+      <div class="ref">
+        <span><span class="k">Reference</span><br><span class="v" id="refno"></span></span>
+        <span><span class="k">Category applied for</span><br><span id="refcat" style="font-weight:600"></span></span>
+        <span><span class="k">Date</span><br><span id="refdate"></span></span>
+      </div>
+      <div>
+        <p><strong>Your application is ready. Send it to BESSA in one of these ways:</strong></p>
+        <ol class="steps">
+          <li><strong>Email it.</strong> Use the button below to open an email to BESSA@uct.ac.za with the application filled in. If your device does not open an email, copy the text and paste it into a new email to <strong>BESSA@uct.ac.za</strong> with the subject line <span class="v" style="font-size:14px" id="refsubject"></span>.</li>
+          <li><strong>Keep your reference.</strong> Quote it in any follow-up. The Membership Secretary acknowledges applications within five working days and Council decides at its next meeting.</li>
+        </ol>
+      </div>
+      <div class="btn-row" style="margin-top:0">
+        <a class="btn" id="mailbtn" href="#">Email application to BESSA</a>
+        <button type="button" class="btn ghost" id="copybtn">Copy application text</button>
+        <a class="btn ghost" id="dlbtn" href="#" download="application.txt">Download as text file</a>
+        <button type="button" class="btn ghost" id="editbtn">Edit application</button>
+      </div>
+      <div class="toast" id="toast"></div>
+      <pre class="summary" id="summary"></pre>
+    </section>
+  </div>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById('app');
+  var review = document.getElementById('review');
+  var errBox = document.getElementById('formerr');
+  var studentOnly = document.getElementById('student-only');
+  var affOnly = document.getElementById('aff-only');
+  var toast = document.getElementById('toast');
+  var summaryEl = document.getElementById('summary');
+  var lastText = '', lastRef = '';
+
+  function selectedCat() { var r = form.querySelector('input[name=cat]:checked'); return r ? r.value : ''; }
+  function syncConditional() {
+    var c = selectedCat();
+    studentOnly.classList.toggle('on', c === 'Student');
+    affOnly.classList.toggle('on', c.indexOf('Affiliate') === 0);
+  }
+  form.addEventListener('change', function (e) { if (e.target && e.target.name === 'cat') syncConditional(); saveDraft(); });
+  form.addEventListener('input', saveDraft);
+
+  var tokenMap = { sabec: 'SABEC conference', ifmbe: 'IFMBE', uct: 'University or lecturer', linkedin: 'LinkedIn or social media', member: 'Invited by a BESSA member', africahealth: 'Africa Health Exhibition', employer: 'Employer' };
+  function applyToken() { var t = (location.hash || '').replace('#', '').toLowerCase(); if (tokenMap[t]) document.getElementById('source').value = tokenMap[t]; }
+
+  function v(id) { var el = document.getElementById(id); return el ? (el.value || '').trim() : ''; }
+  function checked(name) { return Array.prototype.map.call(form.querySelectorAll('input[name=' + name + ']:checked'), function (c) { return c.value; }); }
+  function saveDraft() {
+    try {
+      var d = {};
+      Array.prototype.forEach.call(form.querySelectorAll('input, select, textarea'), function (el) {
+        if (!el.id) return;
+        if (el.type === 'checkbox' || el.type === 'radio') d[el.id] = el.checked; else d[el.id] = el.value;
+      });
+      localStorage.setItem('bessa-join-draft', JSON.stringify(d));
+    } catch (e) {}
+  }
+  function loadDraft() {
+    try {
+      var raw = localStorage.getItem('bessa-join-draft'); if (!raw) return;
+      var d = JSON.parse(raw);
+      Object.keys(d).forEach(function (id) { var el = document.getElementById(id); if (!el) return; if (el.type === 'checkbox' || el.type === 'radio') el.checked = !!d[id]; else el.value = d[id]; });
+    } catch (e) {}
+  }
+  function validate() {
+    var p = [], cat = selectedCat();
+    if (!cat) p.push('Choose a membership category.');
+    if (!v('first') || !v('last')) p.push('Enter your first name and surname.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('email'))) p.push('Enter a valid email address.');
+    if (!v('country')) p.push('Enter your country.');
+    if (!v('sector')) p.push('Select your sector.');
+    if (!v('org')) p.push('Enter your organisation or institution.');
+    if (!v('qual')) p.push('Select your highest qualification.');
+    if (!v('qualfield')) p.push('Enter the field of your qualification.');
+    if (v('years') === '') p.push('Enter your years of relevant experience (0 if none).');
+    if (cat === 'Student' && !v('prog')) p.push('Students: enter your current programme.');
+    if (cat.indexOf('Affiliate') === 0 && !v('afftier')) p.push('Affiliates: select your organisation size.');
+    if (!document.getElementById('d-conduct').checked) p.push('Confirm the Code of Conduct declaration.');
+    if (!document.getElementById('d-popia').checked) p.push('Give consent for processing your personal information.');
+    if (!document.getElementById('d-fees').checked) p.push('Confirm the fee declaration.');
+    return p;
+  }
+  function makeRef() { return 'BESSA-' + new Date().getFullYear() + '-' + Date.now().toString(36).toUpperCase().slice(-5); }
+  function fmtDate(d) { var m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return d.getDate() + ' ' + m[d.getMonth()] + ' ' + d.getFullYear(); }
+  function line(k, val) { return val ? (k + ': ' + val + '\n') : ''; }
+  function buildText(ref, when) {
+    var cat = selectedCat(), name = [v('title'), v('first'), v('last')].filter(Boolean).join(' '), t = '';
+    t += 'BESSA MEMBERSHIP APPLICATION\nReference: ' + ref + '\nDate: ' + fmtDate(when) + '\n\nCategory applied for: ' + cat + '\n\nAPPLICANT\n';
+    t += line('Name', name) + line('Email', v('email')) + line('Mobile', v('phone'));
+    t += line('Location', [v('city'), v('province'), v('country')].filter(Boolean).join(', '));
+    t += line('Sector', v('sector')) + line('Organisation', v('org')) + line('Department', v('dept')) + line('Position', v('role'));
+    t += '\nQUALIFICATIONS AND EXPERIENCE\n';
+    t += line('Highest qualification', [v('qual'), v('qualfield')].filter(Boolean).join(' in '));
+    t += line('Awarding institution', [v('qualinst'), v('qualyear')].filter(Boolean).join(', '));
+    t += line('Years of relevant experience', v('years')) + line('ECSA registration', v('ecsa') || 'None');
+    if (cat === 'Student') { t += line('Current programme', [v('prog'), v('proginst')].filter(Boolean).join(', ')) + line('Expected completion', v('progyear')) + line('Student number', v('studno')); }
+    if (cat.indexOf('Affiliate') === 0) { t += line('Organisation size', v('afftier')) + line('Nominated representative', v('affrep')); }
+    var ints = checked('interest'); if (ints.length) t += 'Areas of interest: ' + ints.join('; ') + '\n';
+    var vols = checked('vol'); if (vols.length) t += 'Willing to: ' + vols.join('; ') + '\n';
+    t += '\nSOURCE\n' + line('How they heard of BESSA', v('source')) + line('Referred by', v('referrer'));
+    if (v('motivation')) t += 'Note to Council: ' + v('motivation') + '\n';
+    t += '\nDECLARATIONS\nConstitution and Code of Conduct: agreed\nPOPIA consent for membership processing and aggregate IFMBE reporting: given\nFee payable on approval: understood\nNewsletter and notices: ' + (document.getElementById('d-news').checked ? 'yes' : 'no') + '\n';
+    return t;
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var problems = validate();
+    if (problems.length) { errBox.hidden = false; errBox.textContent = problems.join(' '); errBox.scrollIntoView({ block: 'center' }); return; }
+    errBox.hidden = true;
+    var when = new Date(); lastRef = makeRef(); lastText = buildText(lastRef, when);
+    document.getElementById('refno').textContent = lastRef;
+    document.getElementById('refcat').textContent = selectedCat();
+    document.getElementById('refdate').textContent = fmtDate(when);
+    var subject = 'BESSA membership application ' + lastRef;
+    document.getElementById('refsubject').textContent = subject;
+    document.getElementById('mailbtn').href = 'mailto:BESSA@uct.ac.za?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lastText);
+    var dl = document.getElementById('dlbtn');
+    try { dl.href = URL.createObjectURL(new Blob([lastText], { type: 'text/plain' })); dl.download = lastRef + '.txt'; } catch (err) { dl.hidden = true; }
+    summaryEl.textContent = lastText;
+    form.hidden = true; review.hidden = false; toast.textContent = '';
+    window.scrollTo({ top: 0 });
+  });
+  document.getElementById('editbtn').addEventListener('click', function () { review.hidden = true; form.hidden = false; window.scrollTo({ top: 0 }); });
+  document.getElementById('clearbtn').addEventListener('click', function () { form.reset(); syncConditional(); errBox.hidden = true; try { localStorage.removeItem('bessa-join-draft'); } catch (e) {} });
+  document.getElementById('copybtn').addEventListener('click', function () {
+    function fallback() { var r = document.createRange(); r.selectNodeContents(summaryEl); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); toast.textContent = 'Text selected. Press Ctrl+C or Cmd+C to copy.'; }
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(lastText).then(function () { toast.textContent = 'Copied. Paste it into an email to BESSA@uct.ac.za.'; }, fallback); } else fallback();
+  });
+  loadDraft(); syncConditional(); applyToken();
+})();
+</script>
